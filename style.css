@@ -1,0 +1,328 @@
+header {
+    background-color: #222222;
+    color: #D4D4D4;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+}
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+.hidden {
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    margin: -1px;
+    opacity: 0;
+}
+.btn {
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 25px;
+    text-transform: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #222222;
+    cursor: pointer;
+    width: 240;
+    padding: 17px 0px 17px 38px;
+}
+.btn::after {
+    content: '';
+    display: block;
+    float: right;
+    width: 19px;
+    height: 16px;
+    
+}
+.main-nav {
+    display: flex;
+    column-gap: 30px;
+    margin-left: 60;
+}
+.site-menu {
+    padding-top: 55px;
+    display: flex;
+    align-items: center;
+}
+.site-menu li {
+    list-style: none;
+}
+.site-menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.site-menu a:hover {
+    color: #FFCB06;
+    transition: 0.5s;
+}
+.icon { 
+    display: block;
+    width: 17px;
+    height: 17px;
+}
+.contact-us {
+    display: flex;
+    margin-left: auto;
+    column-gap: 25px;
+}
+.icon-phone {
+    background: url("img/phone-icon1.png") no-repeat;
+}
+.icon-mail {
+    background: url("img/mail-icon1.png") no-repeat;
+}
+.about-us {
+    padding: 110px 0px 100px 65px;
+    width: 260px;
+}
+.about-us h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 44px;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+.btn-yellow {
+    display: block;
+    width: 240px;
+    background: #FFCB06;
+    border-radius: 25px;
+    padding: 17px 0px 17px 38px;
+    margin-top: 54px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    color: black;
+}
+.btn-yellow::after {
+    content: '';
+    display: inline-block;
+    background: url("img/right-arrow-dark1.png") no-repeat;
+    width: 19px;
+    height: 16px;
+    float: right;
+    right: 22px;
+    position: relative;    
+}
+.site-header .container {
+    background-image: url("img/moon-rocket1.png");
+    background-repeat: no-repeat;
+    background-position: right 140px;
+}
+.btn-yellow:hover {
+    background-color: #D4D4D4;
+    ;
+    transition: 0.5s;
+}
+.advantage {
+    background-color:#131313;
+    padding: 80px 0;
+    color: #D4D4D4;
+}
+.advantage-list {
+    display: flex;
+    justify-content: space-around;
+}
+.advantage-item {
+    flex-basis: 180px;
+}
+.advantage-item::before {
+    content: '';
+    width: 60px;
+    height: 68px;
+    display: block;
+    margin-bottom: 34px;
+}
+.made::before {
+    background: url("img/advantage-icon-1.png") no-repeat;
+}
+.food::before {
+    background: url("img/advantage-icon-2.png") no-repeat;
+}
+.pilot::before {
+    background: url("img/advantage-icon-3.png") no-repeat;
+}
+.moon::before {
+    background: url("img/advantage-icon-4.png") no-repeat;
+}
+.col-container {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    gap: 50px 80px;
+}
+.col-left, .col-right {
+    flex-basis: 49%;
+}
+.content {
+    color: #000000;
+    margin: 80px 0px 74px;
+}
+.content>.col-container {
+    margin-bottom: 52px;
+}
+.lead {
+    font-family: 'Courier New';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    
+}
+.content .lead {
+    margin-bottom: 27px;
+}
+.content-p {
+    margin-top: 30px;
+}
+.content-p:first-child {
+    margin: 17px;
+}
+.content-img {
+    width: 440px;
+    object-fit: cover;
+}
+.recommend-item {
+    margin-bottom: 25px;
+    margin-left: 30px;
+}
+.recommend-item::before {
+    content:"";
+    display: block;
+    background-color: #FFCB06;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: relative;
+    top: 14px;
+    left: -18px;
+}
+.vacation-request {
+    color: #000000;
+    background: #F0F0F0;
+    padding: 100px 0 68px ;
+}
+.vacation-request .lead {
+    padding-bottom: 60px;
+}
+.vacation-request .col-left {
+    padding-left: 40px;
+}
+.vacation-request-text {
+    max-width: 340px;
+}
+.form-element-window {
+    box-sizing: border-box;
+    padding: 17px 23px;
+    width: 100%;
+}
+.form-element-window::placeholder {
+    color:#222222;
+}
+.form-element-window:hover::placeholder {
+    color: #fff;
+}
+.form-element-window:hover {
+    background-color: #FFCB06;
+    border-color: #000000;
+}
+.form-element-window:active {
+    background-color: red;
+}
+.vacation-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 8px;
+}
+.form-element {
+    width: 100%;
+}
+.vacation-form .half-field {
+    width: 49%;
+}
+.btn-black {
+    width: 215px;
+    color: #fff;
+    background-color: #222222;
+    text-align: left;
+    padding-left: 26px;
+}
+.btn-black::after {
+    background: url("img/right-arrow-white1.png") no-repeat;
+    padding-right: 24px;
+}
+.btn-black:active {
+    background-color: red;
+}
+.agreement {
+    margin: 10px 0 32px;
+}   
+[for="agree"]::before {
+    content: '\2713';
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    color: #fff;
+    margin-right: 1em;
+    border: 1px solid #fff;
+}
+.agreement input[type=checkbox]:hover ~ [for="agree"]::before {
+    color: #FFCB06; 
+    background-color: #FFCB06;
+    border-color: #000000;
+}
+.agreement input[type=checkbox]:checked ~ [for="agree"]::before {
+    color: #000000;
+}
+.agreement input[type=checkbox]:active ~ [for="agree"]::before {
+    background-color:red;
+}
+.yellow{
+    color: #FECA30;
+}
+.timetable {
+    background-color: #222222;
+    padding: 97px 0 85px;
+    color: #D4D4D4;
+}
+.timetable-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 77px;
+}
+.timetable-info p {
+    flex-basis: 460px;
+}
+.timetable-info .lead {
+    flex-basis: 160px;
+}
+.timetable-flihgts {
+    width: 100%;
+    border-collapse: collapse;
+}
+.timetable th {
+    text-align: left;
+    background-color: #111111;
+    padding: 18px 17px 15px 17px;
+}
+.timetable td {
+    padding: 20px 17px 13px 17px;
+}
+.timetable-flihgts-row {
+    border-bottom: 1px solid #555555;;
+}
+
